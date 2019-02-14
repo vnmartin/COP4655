@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Players App -- Vianelis Martinez</string>
+    <string name="tab_text_1">PLAYERS</string>
+    <string name="tab_text_2">GAME</string>
+    <string name="tab_text_3">SCORES</string>
+    <string name="tab_text_4">ADMIN</string>
+    <string name="fragment_game_player_one_title">Player 1:</string>
+    <string name="fragment_game_player_two_title">Player 2:</string>
+    <string name="fragment_game_player_select_msg">Select Player!</string>
+    <string name="fragment_game_player_tie">It\'s a tie!</string>
+    <string name="fragment_player_one_title">Select Player 1</string>
+    <string name="fragment_player_two_title">Select Player 2</string>
+    <string name="fragment_admin_add_player"><u>Player Admin</u></string>
+    <string name="fragment_admin_add_name">Add:</string>
+    <string name="fragment_admin_remove_name">Remove:</string>
+    <string name="fragment_admin_add_submit">Add</string>
+    <string name="fragment_admin_remove_submit">Remove</string>
+    <string name="fragment_admin_status">Status:</string>
+    <string name="fragment_admin_status_success"><font color="#008000">Success</font></string>
+    <string name="fragment_admin_status_failed"><font color="#FF0000">Failed</font></string>
+    <string name="fragment_admin_status_blank"><font color="#FF0000">Please add name</font></string>
+    <string name="game_board">Game Board</string>
+    <string name="score_board">Score Board</string>
+    <string name="players">Players</string>
+    <string name="admin">Admin</string>
+    <string name="add_player">Add Player</string>
+    <string name="player_name">player name</string>
+    <string name="name">Name</string>
+    <string name="remove">Remove</string>
+    <string name="add">Add</string>
+    <string name="none"></string>
+    <string name="status">Status</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Gameboard">
+
+    <TextView
+        android:id="@+id/game_player_two"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/game_player_one"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/game_player_one"
+        android:layout_marginTop="77dp"
+        android:text="@string/none"
+        android:textSize="30sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/game_player_one"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/game_player_one_title"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/none"
+        android:textSize="30sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/game_player_one_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/fragment_game_player_one_title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/game_player_two_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/game_player_one_title"
+        android:layout_marginTop="75dp"
+        android:text="@string/fragment_game_player_two_title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignLeft="@+id/game_player_one_title" />
+
+    <Button
+        android:id="@+id/player_one_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/game_player_one_title"
+        android:layout_marginTop="125dp"
+        android:textSize="20sp"
+        android:text="@string/none"
+        android:layout_alignLeft="@+id/game_player_one_title" />
+
+    <Button
+        android:id="@+id/player_two_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/game_player_one_title"
+        android:layout_below="@+id/player_one_win"
+        android:textSize="20sp"
+        android:text="@string/none"
+        android:layout_alignLeft="@+id/game_player_one_title" />
+
+    <Button
+        android:id="@+id/player_tie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/game_player_one_title"
+        android:layout_below="@+id/player_two_win"
+        android:textSize="20sp"
+        android:text="@string/none"
+        android:layout_alignLeft="@+id/game_player_one_title" />
+
+</RelativeLayout>
