@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Project3</string>
+    <string name="conversion">Conversion</string>
+    <string name="miles">Miles</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="calculate">Calculate</string>
+    <string name="miles_to_kilometers">Miles to Kilometers</string>
+    <string name="_0">0</string>
+    <string name="vianelis_martinez">Vianelis Martinez</string>
+
+    <string name="mikm">Miles to Kilometers</string>
+    <string name="kmmi">Kilometers to Miles</string>
+    <string name="incm">Inches to Centimeters</string>
+    <string name="cmin">Centimeters to Inches</string>
+
+    <string name="units_list">Units List</string>
+</resources>

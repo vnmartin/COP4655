@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="area">Area</string>
+    <string name="perimeter">Perimeter</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_area">Total Area</string>
+    <string name="total_perimeter">Total Perimeter</string>
+    <string name="rectangle_width">Rectangle Width</string>
+    <string name="rectangle_height">Rectangle Height</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Width"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/width"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/Height"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Width"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Width"
+        android:layout_marginTop="100dp"
+        android:text="@string/height"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/Area"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Width"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Width"
+        android:layout_marginTop="160dp"
+        android:text="@string/area"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/Perimeter"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Width"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Width"
+        android:layout_marginTop="220dp"
+        android:text="@string/perimeter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Width"
+        android:layout_alignStart="@+id/Width"
+        android:layout_marginTop="260dp"
+        android:text="@string/calculate"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/WidthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Width"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_toRightOf="@+id/Width"
+        android:ems="10"
+        android:hint="@string/rectangle_width"
+        android:inputType="numberDecimal"
+        tools:ignore="RtlCompat"
+        android:layout_toEndOf="@+id/Width" />
+
+    <EditText
+        android:id="@+id/HeightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Height"
+        android:layout_alignLeft="@+id/WidthInput"
+        android:layout_alignStart="@+id/WidthInput"
+        android:layout_toRightOf="@+id/Height"
+        android:ems="10"
+        android:hint="@string/rectangle_height"
+        android:inputType="numberDecimal"
+        tools:ignore="RtlCompat"
+        android:layout_toEndOf="@+id/Height" />
+
+    <TextView
+        android:id="@+id/CalcArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Area"
+        android:layout_alignLeft="@+id/WidthInput"
+        android:layout_alignStart="@+id/WidthInput"
+        android:layout_toEndOf="@+id/Area"
+        android:layout_toRightOf="@+id/Area"
+        android:text="@string/total_area"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/CalcPerimeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Perimeter"
+        android:layout_alignLeft="@+id/WidthInput"
+        android:layout_alignStart="@+id/WidthInput"
+        android:layout_toEndOf="@+id/Perimeter"
+        android:layout_toRightOf="@+id/Perimeter"
+        android:text="@string/total_perimeter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>

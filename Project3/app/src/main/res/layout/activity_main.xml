@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Conversion"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/conversion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/Unit1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Conversion"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Conversion"
+        android:layout_marginTop="100dp"
+        android:text="@string/miles"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/Unit2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Conversion"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Conversion"
+        android:layout_marginTop="160dp"
+        android:text="@string/kilometers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Conversion"
+        android:layout_alignStart="@+id/Conversion"
+        android:layout_marginTop="210dp"
+        android:text="@string/calculate"
+        tools:ignore="RtlCompat" />
+
+    <Spinner
+        android:id="@+id/Units_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Conversion"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_toRightOf="@+id/Conversion"
+        android:ems="10"
+        android:hint="@string/units_list"
+        android:inputType="text"
+        tools:ignore="RtlCompat"
+        android:layout_toEndOf="@+id/Conversion" />
+
+    <EditText
+        android:id="@+id/UnitInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Unit1"
+        android:layout_alignLeft="@+id/Units_List"
+        android:layout_alignStart="@+id/Units_List"
+        android:layout_toRightOf="@+id/Unit1"
+        android:ems="10"
+        android:hint="@string/_0"
+        android:inputType="numberDecimal"
+        tools:ignore="RtlCompat"
+        android:layout_toEndOf="@+id/Unit1" />
+
+    <TextView
+        android:id="@+id/UnitOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Unit2"
+        android:layout_alignLeft="@+id/Units_List"
+        android:layout_alignStart="@+id/Units_List"
+        android:layout_toEndOf="@+id/Unit2"
+        android:layout_toRightOf="@+id/Unit2"
+        android:text="@string/_0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="222dp"
+        android:text="@string/vianelis_martinez" />
+
+</RelativeLayout>
